@@ -1,0 +1,90 @@
+
+/* segunda parte introducao */
+
+.introducao-bg {
+    background: var(--cor-12);
+    box-shadow: inset 0px -120px  white;
+  }
+  
+  .introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* .introducao p,
+  .introducao a {
+    grid-column: 1;
+  }
+  
+  .introducao img {
+      grid-column: 2;
+      grid-row: -1/3;
+  } NÃO NECESSARIO PORQUE EU ACRESCENTEI UMA DIV PARA PODER SEPARA OS CONTEUDOS EM DUAS COLUNAS */
+  
+  
+  .introducao-conteudo {
+      align-self: end;
+      padding-bottom: 200px;
+  }
+  
+  /* .introducao-imagem {
+      margin-bottom: -120px;
+  }
+  PRIMEIRA SOLUÇÃO PARA FAZER O EFEITO DA IMAGEM SAIR DO CONTAINEIR */
+  
+  .introducao img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+  }
+  
+  .introducao h1 {
+      margin-bottom: 32px;
+    
+  }
+  
+  .introducao p {
+      margin-bottom: 24px;
+      
+     
+  }
+  
+  
+
+  
+  @media (max-width: 800px) {
+       .introducao {
+          grid-template-columns: 1fr;
+          gap: 16px;
+       }
+       .introducao-bg {
+          background: var(--cor-12);
+          padding-top:40px;
+          box-shadow: 0 -60 white;
+       }
+       .introducao-conteudo {
+          padding-bottom: 0px;
+       }
+      .introducao h1 {
+          font-size: 24px;
+          margin-bottom: 16px;
+      }
+      .introducao p {
+          font-size: 15px
+      }
+  
+      .introducao img {
+          height: 300px;
+          width: 100%;
+      }
+  
+  
+  }
